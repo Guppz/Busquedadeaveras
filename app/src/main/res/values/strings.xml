@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Buscador de averías</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="key">AIzaSyBgERxbZyI32grL73vr1wPZyMvI0_d9HUE</string>
+</resources>
