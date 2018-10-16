@@ -27,5 +27,6 @@ public class LoginActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
         dotsIndicator.setViewPager(viewPager);
+
     }
 }
