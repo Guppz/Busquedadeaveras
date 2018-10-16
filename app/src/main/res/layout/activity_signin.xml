@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".ui.ui.activities.LoginActivity"
     tools:layout_editor_absoluteY="25dp">
 
     <LinearLayout
@@ -19,6 +19,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Registro"
+            android:textSize="30dp" />
+
         <android.support.design.widget.TextInputEditText
             android:id="@+id/textUsuario"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
@@ -32,7 +40,20 @@
             android:textColorLink="@color/colorAccent" />
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/textpass"
+        android:id="@+id/textpass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/nombreText"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="337dp"
             android:layout_height="wrap_content"
@@ -41,11 +62,37 @@
             android:layout_marginBottom="10dp"
             android:backgroundTint="#ffffff"
             android:ems="10"
-            android:hint="Contraseña"
-            android:inputType="textPassword" />
+            android:hint="Nombre"
+            android:inputType="none" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/cedulaText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#ffffff"
+            android:ems="10"
+            android:hint="Cedula"
+            android:inputType="number" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/telText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#ffffff"
+            android:ems="10"
+            android:hint="Telefono"
+            android:inputType="number" />
 
         <android.support.design.button.MaterialButton
-            android:id="@+id/btn"
+            android:id="@+id/btn_registro"
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="337dp"
             android:layout_height="wrap_content"

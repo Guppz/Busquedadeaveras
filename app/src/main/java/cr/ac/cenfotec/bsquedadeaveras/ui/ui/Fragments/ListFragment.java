@@ -1,24 +1,21 @@
-package cr.ac.cenfotec.bsquedadeaveras.Fragments;
+package cr.ac.cenfotec.bsquedadeaveras.ui.ui.Fragments;
 
 import android.os.Bundle;
-import android.support.design.button.MaterialButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
-import cr.ac.cenfotec.bsquedadeaveras.Adaptador.AdapterList;
+import cr.ac.cenfotec.bsquedadeaveras.manager.Adaptador.AdapterList;
 import cr.ac.cenfotec.bsquedadeaveras.R;
-import cr.ac.cenfotec.bsquedadeaveras.entities.Averia;
-import cr.ac.cenfotec.bsquedadeaveras.entities.Ubicacion;
-import cr.ac.cenfotec.bsquedadeaveras.entities.Usuario;
+import cr.ac.cenfotec.bsquedadeaveras.DB.entities.Averia;
+import cr.ac.cenfotec.bsquedadeaveras.DB.entities.Ubicacion;
+import cr.ac.cenfotec.bsquedadeaveras.DB.entities.Usuario;
 
 public class ListFragment extends Fragment {
 

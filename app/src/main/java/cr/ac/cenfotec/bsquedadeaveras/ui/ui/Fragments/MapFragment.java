@@ -1,17 +1,15 @@
-package cr.ac.cenfotec.bsquedadeaveras.Fragments;
+package cr.ac.cenfotec.bsquedadeaveras.ui.ui.Fragments;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.design.button.MaterialButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -19,9 +17,11 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
-import butterknife.BindView;
+import java.util.Map;
+
 import butterknife.ButterKnife;
 import cr.ac.cenfotec.bsquedadeaveras.R;
+import cr.ac.cenfotec.bsquedadeaveras.ui.ui.activities.MapActivity;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback {
 

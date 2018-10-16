@@ -1,6 +1,4 @@
-package cr.ac.cenfotec.bsquedadeaveras.entities;
-
-import java.util.Date;
+package cr.ac.cenfotec.bsquedadeaveras.DB.entities;
 
 public class Averia {
     int id;

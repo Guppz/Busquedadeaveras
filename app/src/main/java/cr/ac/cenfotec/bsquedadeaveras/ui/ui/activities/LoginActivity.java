@@ -1,19 +1,13 @@
-package cr.ac.cenfotec.bsquedadeaveras;
+package cr.ac.cenfotec.bsquedadeaveras.ui.ui.activities;
 
-import android.app.Dialog;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.ViewParent;
-import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
 import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
-import com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator;
 
-import cr.ac.cenfotec.bsquedadeaveras.Adaptador.ViewPagerAdapter;
-import cr.ac.cenfotec.bsquedadeaveras.Fragments.LoginFragment;
+import cr.ac.cenfotec.bsquedadeaveras.manager.Adaptador.ViewPagerAdapter;
+import cr.ac.cenfotec.bsquedadeaveras.R;
 
 public class LoginActivity extends AppCompatActivity {
 

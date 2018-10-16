@@ -1,11 +1,11 @@
-package cr.ac.cenfotec.bsquedadeaveras.Adaptador;
+package cr.ac.cenfotec.bsquedadeaveras.manager.Adaptador;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import cr.ac.cenfotec.bsquedadeaveras.Fragments.LoginFragment;
-import cr.ac.cenfotec.bsquedadeaveras.Fragments.SingInFragment;
+import cr.ac.cenfotec.bsquedadeaveras.ui.ui.Fragments.LoginFragment;
+import cr.ac.cenfotec.bsquedadeaveras.ui.ui.Fragments.SingInFragment;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     LoginFragment lF;

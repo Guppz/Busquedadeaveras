@@ -1,4 +1,4 @@
-package cr.ac.cenfotec.bsquedadeaveras.entities;
+package cr.ac.cenfotec.bsquedadeaveras.DB.entities;
 
 public class Ubicacion {
     double latitude , longitud;

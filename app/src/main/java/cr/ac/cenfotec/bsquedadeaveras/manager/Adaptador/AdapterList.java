@@ -1,6 +1,7 @@
-package cr.ac.cenfotec.bsquedadeaveras.Adaptador;
+package cr.ac.cenfotec.bsquedadeaveras.manager.Adaptador;
 
 import android.support.annotation.NonNull;
+import android.support.design.chip.Chip;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import cr.ac.cenfotec.bsquedadeaveras.R;
-import cr.ac.cenfotec.bsquedadeaveras.entities.Averia;
+import cr.ac.cenfotec.bsquedadeaveras.DB.entities.Averia;
 
 public class AdapterList extends RecyclerView.Adapter<AdapterList.ViewHolder> {
     ArrayList<Averia>listaAverias;
@@ -37,14 +38,15 @@ public class AdapterList extends RecyclerView.Adapter<AdapterList.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView creado , averiaNombre , tipoAveria,desAveria,fecha;
+        TextView creado , averiaNombre ,desAveria,fecha;
+        Chip tipo;
         ImageView image;
 
         public ViewHolder(View itemView) {
             super(itemView);
             creado = itemView.findViewById(R.id.creado);
             averiaNombre = itemView.findViewById(R.id.averia_nombre);
-            tipoAveria = itemView.findViewById(R.id.tipo_averia);
+            tipo = itemView.findViewById(R.id.tipo_averia);
             desAveria = itemView.findViewById(R.id.des_averia);
             fecha = itemView.findViewById(R.id.fecha);
             image = itemView.findViewById(R.id.photo);
@@ -52,10 +54,10 @@ public class AdapterList extends RecyclerView.Adapter<AdapterList.ViewHolder> {
         public void asignarDatos(Averia averia) {
             creado.setText(averia.getUsuario().getNombre());
             averiaNombre.setText(averia.getNombre());
-            tipoAveria.setText(averia.getTipo());
-            desAveria.setText(averia.getDescripcion());
+            tipo.setText(averia.getTipo());
+            desAveria.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaat auctor urna");
             fecha.setText(averia.getFecha());
-            image.setImageResource(R.drawable.up);
+            image.setImageResource(R.drawable.back);
         }
     }
 }
