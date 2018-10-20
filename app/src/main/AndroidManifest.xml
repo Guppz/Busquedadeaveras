@@ -13,21 +13,43 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.ui.activities.LoginActivity">
-        </activity>
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/key"/>
-        <activity android:name=".ui.ui.activities.MapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/key"/>
+        <activity android:name=".ui.ui.activities.MapActivity">
+        </activity>
+        <activity android:name=".ui.ui.activities.EditarActivity">
+        </activity>
+        <activity android:name=".ui.ui.activities.CrearActivity">
+    </activity>
+
+        <activity android:name=".ui.ui.activities.DettalesActivity">
+        </activity>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cr.ac.cenfotec.bsquedadeaveras"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
 
 
 </manifest>

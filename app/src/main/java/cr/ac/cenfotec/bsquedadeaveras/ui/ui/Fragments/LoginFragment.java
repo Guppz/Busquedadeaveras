@@ -32,7 +32,7 @@ public class LoginFragment extends Fragment {
     @BindView(R.id.btn)
     MaterialButton btm;
     DatabaseHelper dbHelper;
-    private static  Usuario loginUser = new Usuario();
+    private static  Usuario loginUser = new Usuario("","","","");
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

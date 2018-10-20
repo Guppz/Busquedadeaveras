@@ -1,5 +1,6 @@
 package cr.ac.cenfotec.bsquedadeaveras.ui.ui.Fragments;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.button.MaterialButton;
@@ -21,6 +22,7 @@ import butterknife.OnClick;
 import cr.ac.cenfotec.bsquedadeaveras.DB.DatabaseHelper;
 import cr.ac.cenfotec.bsquedadeaveras.R;
 import cr.ac.cenfotec.bsquedadeaveras.DB.entities.Usuario;
+import cr.ac.cenfotec.bsquedadeaveras.ui.ui.activities.MapActivity;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -67,6 +69,9 @@ public class SingInFragment extends Fragment {
             dbHelper=(DatabaseHelper) OpenHelperManager.getHelper(getContext(),DatabaseHelper.class);
             RuntimeExceptionDao<Usuario,Integer> contactDao = dbHelper.getRuntimeDao();
             contactDao.create(usuario);
+            Intent myIntent = new Intent(getContext(), MapActivity.class);
+            myIntent.putExtra("MyClass", usuario);
+            startActivity(myIntent);
             dbHelper.close();
         }
     }

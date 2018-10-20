@@ -13,8 +13,16 @@ public class Usuario implements Serializable {
     public String tel;
     @DatabaseField(columnName = "cedula" , canBeNull = false)
     public String cedula;
+
     @DatabaseField(columnName = "password" , canBeNull = false)
     public String password;
+
+    public Usuario(String correo, String nombre, String tel, String cedula) {
+        this.correo = correo;
+        this.nombre = nombre;
+        this.tel = tel;
+        this.cedula = cedula;
+    }
 
     public Usuario(String correo, String nombre, String tel, String cedula,String password) {
         this.correo = correo;
@@ -23,16 +31,9 @@ public class Usuario implements Serializable {
         this.cedula = cedula;
         this.password =password;
     }
-    public Usuario(String correo, String nombre, String tel, String cedula) {
-        this.correo = correo;
-        this.nombre = nombre;
-        this.tel = tel;
-        this.cedula = cedula;
-    }
 
     public Usuario() {
     }
-
     public String getCorreo() {
         return correo;
     }

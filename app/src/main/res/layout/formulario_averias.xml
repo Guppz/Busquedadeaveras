@@ -13,10 +13,10 @@
         android:orientation="vertical">
 
         <fragment
-            android:id="@+id/map"
+            android:id="@+id/map_crear"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="101dp" />
+            android:layout_height="239dp" />
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -29,7 +29,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/photo"
+                    android:id="@+id/crear_img"
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
                     android:scaleType="centerCrop"
@@ -43,36 +43,30 @@
                     android:padding="16dp">
 
                     <EditText
-                        android:id="@+id/averia_nombre"
+                        android:id="@+id/nombre_crear"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
-                        android:text="Titulo"
+                        android:hint="Titulo"
                         android:textColor="#000"
+                        android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
                         android:textSize="18sp" />
 
 
                     <EditText
-                        android:id="@+id/creado"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:text="por"
-                        android:textColor="#000"
-                        android:textSize="18sp" />
-
-                    <EditText
-                        android:id="@+id/des_averia"
+                        android:id="@+id/des_crear"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Descricion"
-                        android:textColor="#555" />
+                        android:hint="Descripción"
+                        android:textColor="#555"
+                        android:textColorHint="@color/common_google_signin_btn_text_dark_focused" />
 
                     <EditText
-                        android:id="@+id/tipo_averia"
+                        android:id="@+id/crear_tipo"
+                        android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tipo"
+                        android:hint="Tipo"
                         android:textColor="#555" />
                 </LinearLayout>
 
@@ -82,6 +76,7 @@
                     android:background="@color/common_google_signin_btn_text_dark_default">
 
                     <Button
+                        android:id="@+id/crear"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Crear"

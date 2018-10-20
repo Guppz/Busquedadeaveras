@@ -1,26 +1,28 @@
 package cr.ac.cenfotec.bsquedadeaveras.DB.entities;
 
-public class Ubicacion {
-    double latitude , longitud;
+import java.io.Serializable;
+
+public class Ubicacion implements Serializable {
+    double lat , lon;
 
     public Ubicacion(double latitude, double longitud) {
-        this.latitude = latitude;
-        this.longitud = longitud;
+        this.lat = latitude;
+        this.lon = longitud;
     }
 
     public double getLatitude() {
-        return latitude;
+        return lat;
     }
 
     public void setLatitude(double latitude) {
-        this.latitude = latitude;
+        this.lat = latitude;
     }
 
     public double getLongitud() {
-        return longitud;
+        return lon;
     }
 
     public void setLongitud(double longitud) {
-        this.longitud = longitud;
+        this.lon = longitud;
     }
 }
